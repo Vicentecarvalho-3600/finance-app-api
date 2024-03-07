@@ -12,3 +12,5 @@ export const serverError = () => {
 }
 
 export const ok = (body) => ({ statusCode: 200, body })
+
+export const notfound = (body) => ({ statusCode: 404, body })
