@@ -9,7 +9,7 @@ export class GetUserByIdController {
 
             if (!isIdValid) {
                 return badRequest({
-                    message: "The provided is is not valid",
+                    message: "The provided id is not valid",
                 })
             }
 
