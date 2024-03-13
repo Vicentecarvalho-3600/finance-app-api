@@ -1,5 +1,5 @@
 import { EmailAlreadyInUseError } from "../errors/user.js"
-import { UpdatedUserUseCase } from "../use-cases/update-user.js"
+import { UpdatedUserUseCase } from "../use-cases/index.js"
 import {
     invalidPasswordResponse,
     emailIsAlreadyInUseResponse,
