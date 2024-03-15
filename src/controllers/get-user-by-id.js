@@ -4,7 +4,7 @@ import {
     invalidIdResponse,
     serverError,
     ok,
-    notfound,
+    userNotfound,
 } from "./helpers/index.js"
 
 export class GetUserByIdController {
@@ -23,9 +23,7 @@ export class GetUserByIdController {
             )
 
             if (!user) {
-                return notfound({
-                    message: "User not found.",
-                })
+                return userNotfound()
             }
 
             return ok(user)
