@@ -22,7 +22,6 @@ export class PostgresUpdatedUserRepository {
             updateQuery,
             updateValues,
         )
-        console.log(updateQuery, updateValues)
 
         return updatedUser[0]
     }
