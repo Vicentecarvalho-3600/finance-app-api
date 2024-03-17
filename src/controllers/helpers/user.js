@@ -16,11 +16,10 @@ export const invalidIdResponse = () =>
         message: "The provided id is not valid",
     })
 
-export const userNotfound = () => {
+export const userNotfound = () =>
     notfound({
         message: "User not Found",
     })
-}
 
 export const checkIfPasswordIsValid = (password) => password.length >= 6
 
